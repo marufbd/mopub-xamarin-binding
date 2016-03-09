@@ -1,0 +1,63 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  
+  <attr path="/api/package[@name='com.mopub.common']" name="managedName">com.mopub.common</attr>
+  <attr path="/api/package[@name='com.mopub.common.event']" name="managedName">com.mopub.common.events</attr>
+  <attr path="/api/package[@name='com.mopub.exceptions']" name="managedName">MoPub.Exceptions</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']" name="managedName">com.mopub.mobileads</attr>
+  <attr path="/api/package[@name='com.mopub.volley']" name="managedName">MoPub.Volley</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='BaseInterstitialActivity']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='VideoDownloader.VideoDownloaderListener']" name="visibility">public</attr>
+
+  <!--<attr path="/api/package[@name='com.facebook.ads']" name="managedName">Facebook.Ads</attr>  
+  <remove-node path="/api/package[starts-with(@name, 'com.facebook.ads.internal.')]"/>-->
+
+  <remove-node path="/api/package[@name='com.mopub.nativeads']/class[starts-with(@name, 'MoPubCustomEventNative')]" />
+  <attr path="/api/package[@name='com.mopub.nativeads']/class[@name='CustomEventNative']/method[@name='loadNativeAd']" name="managedName">loadNativeAd</attr>
+
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[@name='HtmlBanner']"/>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='CustomEventBanner']/method[@name='loadBanner']" name="managedName">loadBanner</attr>
+  
+   
+  
+  <remove-node path="/api/package[@name='com.mopub.nativeads']/class[starts-with(@name, 'NativeVideoController')]" />  
+  <remove-node path="/api/package[@name='com.mopub.nativeads']/class[starts-with(@name, 'VideoNativeAd')]" />  
+  <remove-node path="/api/package[@name='com.mopub.nativeads']/class[starts-with(@name, 'MoPubCustomEventVideoNative')]" />  
+  <remove-node path="/api/package[@name='com.mopub.nativeads']/class[starts-with(@name, 'IntInterval')]" />  
+  <remove-node path="/api/package[@name='com.mopub.common']/class[starts-with(@name, 'UrlResolutionTask')]" />    
+  
+  
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[@name='VideoDownloader']" />
+
+
+  <remove-node path="/api/package[starts-with(@name, 'com.millennialmedia')]"/> 
+  <remove-node path="/api/package[@name='com.mopub.common.factories']"/>
+  <remove-node path="/api/package[@name='com.mopub.common.util']"/>
+  <remove-node path="/api/package[@name='com.mopub.common.logging']"/>
+  <remove-node path="/api/package[starts-with(@name, 'com.mopub.network')]"/>  
+  <remove-node path="/api/package[starts-with(@name, 'com.mopub.mraid')]"/>
+
+  <remove-node path="/api/package[@name='com.mopub.volley.toolbox']"/>
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[starts-with(@name, 'VastVideoViewController')]" />
+  <remove-node path="/api/package[@name='com.mopub.volley']/class[@name='Request']/method[@name='getMethod' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.mopub.common.event']/class[@name='BaseEvent.Builder']/method[@name='build' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.mopub.common']/class[starts-with(@name, 'DownloadTask')]" />
+  <remove-node path="/api/package[@name='com.mopub.common']/interface[starts-with(@name, 'DownloadTask')]" />
+  <remove-node path="/api/package[@name='com.mopub.common.event']/class[@name='EventSerializer']" />
+
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[starts-with(@name, 'MraidActivity')]" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[starts-with(@name, 'Vast')]" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/interface[starts-with(@name, 'Vast')]" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[@name='HtmlInterstitial']"/>  
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[@name='ResponseBodyInterstitial']"/>  
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/interface[@name='CustomEventInterstitialAdapter.CustomEventInterstitialAdapterListener']" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/interface[@name='CustomEventRewardedVideo.CustomEventRewardedVideoListener']" />
+  
+</metadata>

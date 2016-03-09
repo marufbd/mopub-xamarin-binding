@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/MyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Hello" />
+    <TextView
+        android:text="You should see the Mopub banner ad below, if nothing shows up please refer to logcat"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <com.mopub.mobileads.MoPubView
+        android:id="@+id/adview_banner"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="bottom"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom" />
+</LinearLayout>
